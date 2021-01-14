@@ -1,4 +1,6 @@
 <h1>Our Flats!</h1>
+<p><%= link_to "list a new flat", new_flat_path %></p>
+
 
 <% @flats.each do |flat| %>
   <h2> <%= link_to flat.name, flat_path(flat)  %> </h2>
